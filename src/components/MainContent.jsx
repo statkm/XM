@@ -1,12 +1,12 @@
+import EmailIcon from '@mui/icons-material/Email'
+import FaceIcon from '@mui/icons-material/Face'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
+import SchoolIcon from '@mui/icons-material/School'
 import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import Checkbox from '@mui/material/Checkbox'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import Grid from '@mui/material/Grid'
+import Container from '@mui/material/Container'
+import Divider from '@mui/material/Divider'
+import Link from '@mui/material/Link'
 import Paper from '@mui/material/Paper'
 import Typography from '@mui/material/Typography'
 
@@ -16,164 +16,152 @@ function MainContent() {
       component="main"
       sx={{
         flexGrow: 1,
-        bgcolor: '#f5f5f5',
-        p: 3,
-        mt: 8,
-        ml: { sm: 0 },
-        overflow: 'auto',
+        bgcolor: 'background.default',
+        py: 6,
       }}
     >
-      <Grid container spacing={3}>
-        {/* Charts Section */}
-        <Grid item xs={12}>
-          <Paper sx={{ p: 3 }}>
-            <Grid container spacing={2} justifyContent="center">
-              {[1, 2, 3, 4].map((item) => (
-                <Grid item xs={12} sm={6} md={3} key={item}>
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      height: 200,
-                    }}
-                  >
-                    <svg width="120" height="120" viewBox="0 0 120 120">
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="50"
-                        fill="none"
-                        stroke="#e0e0e0"
-                        strokeWidth="10"
-                      />
-                      <circle
-                        cx="60"
-                        cy="60"
-                        r="50"
-                        fill="none"
-                        stroke="#00bcd4"
-                        strokeWidth="10"
-                        strokeDasharray="251.2 314"
-                        strokeDashoffset="0"
-                        transform="rotate(-90 60 60)"
-                      />
-                      <text
-                        x="60"
-                        y="60"
-                        textAnchor="middle"
-                        dominantBaseline="middle"
-                        fontSize="24"
-                        fill="#888"
-                      >
-                        82%
-                      </text>
-                    </svg>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-          </Paper>
-        </Grid>
-
-        {/* Graphs Section */}
-        <Grid item xs={12} md={8}>
-          <Paper sx={{ p: 3, height: 400 }}>
-            <Typography variant="h6" gutterBottom>
-              Statistics
+      <Container maxWidth="md">
+        {/* Welcome Section */}
+        <Paper sx={{ p: 4, mb: 4 }}>
+          <Typography variant="h4" gutterBottom sx={{ fontWeight: 600, color: 'primary.main' }}>
+            Welcome to Kotaro MIZUMA's page!!
+          </Typography>
+          <Typography variant="h5" sx={{ fontWeight: 500, mb: 3 }}>
+            水間 浩太郎 Kotaro MIZUMA
+          </Typography>
+          
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
+            <LinkedInIcon color="primary" />
+            <Link href="https://www.linkedin.com/in/kotaro-mizuma-0644a8137/" target="_blank" rel="noopener">
+              LinkedIn
+            </Link>
+          </Box>
+          
+          <Box sx={{ mt: 2 }}>
+            <Typography variant="body1" sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1 }}>
+              <EmailIcon fontSize="small" />
+              <strong>Mail:</strong>
             </Typography>
-            <Box
-              sx={{
-                display: 'flex',
-                flexDirection: 'column',
-                gap: 2,
-                height: '80%',
-                justifyContent: 'space-around',
-              }}
-            >
-              {[1, 2].map((item) => (
-                <Box
-                  key={item}
-                  sx={{
-                    height: '45%',
-                    bgcolor: '#f5f5f5',
-                    borderRadius: 1,
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}
-                >
-                  <Typography variant="body2" color="text.secondary">
-                    Graph {item}
-                  </Typography>
-                </Box>
-              ))}
+            <Typography variant="body2" sx={{ ml: 4, display: 'flex', alignItems: 'center', gap: 1 }}>
+              kotaro.mizuma19 [at] gmail.com (private<FaceIcon fontSize="small" color="action" />)
+            </Typography>
+            <Typography variant="body2" sx={{ ml: 4, display: 'flex', alignItems: 'center', gap: 1 }}>
+              mizuma [at] sigmath.es.osaka-u.ac.jp (academic<SchoolIcon fontSize="small" color="action" />)
+            </Typography>
+            <Typography variant="caption" color="text.secondary" sx={{ ml: 4, mt: 1, display: 'block', fontStyle: 'italic' }}>
+              Note: [at] should be replaced with @ to avoid spam bots.
+            </Typography>
+          </Box>
+        </Paper>
+
+        {/* Affiliation Section */}
+        <Paper sx={{ p: 4, mb: 4 }}>
+          <Typography variant="h5" gutterBottom sx={{ fontWeight: 600, color: 'primary.main', mb: 3 }}>
+            Affiliation
+          </Typography>
+          
+          <Box sx={{ mb: 3 }}>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
+              Statistical & Quantitative Sciences
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Data and Quantitative Sciences, Research & Development
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Takeda Pharmaceutical Company Limited
+            </Typography>
+            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1, mt: 1 }}>
+              <LocationOnIcon fontSize="small" color="action" />
+              <Typography variant="body2" color="text.secondary">
+                1-1, Doshomachi 4-chome, Chuo-ku, Osaka, Japan 540-8645
+              </Typography>
             </Box>
-          </Paper>
-        </Grid>
+          </Box>
 
-        {/* Cards Section */}
-        <Grid item xs={12} md={4}>
-          <Grid container spacing={2}>
-            {/* Updates Card */}
-            <Grid item xs={12}>
-              <Card>
-                <Box sx={{ bgcolor: '#26a69a', color: 'white', p: 2 }}>
-                  <Typography variant="h6">Updates</Typography>
-                </Box>
-                <CardContent>
-                  <Typography variant="body2" color="text.secondary">
-                    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button size="small">Read More</Button>
-                </CardActions>
-              </Card>
-            </Grid>
+          <Divider sx={{ my: 3 }} />
 
-            {/* Options Card */}
-            <Grid item xs={12}>
-              <Card sx={{ bgcolor: '#673ab7', color: 'white' }}>
-                <CardContent>
-                  <Typography variant="h6" gutterBottom>
-                    View options
-                  </Typography>
-                  <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.5 }}>
-                    <FormControlLabel
-                      control={<Checkbox sx={{ color: 'white', '&.Mui-checked': { color: 'white' } }} />}
-                      label="Click per object"
-                      sx={{ color: 'white' }}
-                    />
-                    <FormControlLabel
-                      control={<Checkbox sx={{ color: 'white', '&.Mui-checked': { color: 'white' } }} />}
-                      label="Views per object"
-                      sx={{ color: 'white' }}
-                    />
-                    <FormControlLabel
-                      control={<Checkbox sx={{ color: 'white', '&.Mui-checked': { color: 'white' } }} />}
-                      label="Objects selected"
-                      sx={{ color: 'white' }}
-                    />
-                    <FormControlLabel
-                      control={<Checkbox sx={{ color: 'white', '&.Mui-checked': { color: 'white' } }} />}
-                      label="Objects viewed"
-                      sx={{ color: 'white' }}
-                    />
-                  </Box>
-                </CardContent>
-                <CardActions sx={{ justifyContent: 'space-between' }}>
-                  <Button size="small" sx={{ color: 'white' }}>
-                    Change location
-                  </Button>
-                  <LocationOnIcon />
-                </CardActions>
-              </Card>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+          <Box>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
+              The University of Osaka
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Ph.D. Candidate @  
+              <Link href="http://www.sigmath.es.osaka-u.ac.jp/Stat1/" target="_blank" rel="noopener">
+                Uchida Laboratory
+              </Link>
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Area of Mathematical and Statistical Finance
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Division of Mathematical Science for Social Systems
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              Graduate School of Engineering Science
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              The University of Osaka
+            </Typography>
+            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1, mt: 1 }}>
+              <LocationOnIcon fontSize="small" color="action" />
+              <Typography variant="body2" color="text.secondary">
+                1-3 Machikaneyama-cho Toyonaka, Osaka, Japan 560-8531
+              </Typography>
+            </Box>
+          </Box>
+        </Paper>
+
+        {/* Research Theme Section */}
+        <Paper sx={{ p: 4 }}>
+          <Typography variant="h5" gutterBottom sx={{ fontWeight: 600, color: 'primary.main', mb: 3 }}>
+            Research Theme
+          </Typography>
+          
+          <Box component="ol" sx={{ pl: 2 }}>
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                Computational algebraic statistics
+              </Typography>
+              <Box component="ol" sx={{ pl: 2, mt: 1 }}>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Tests based on contingency tables
+                </Typography>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Survival analysis
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                Bayesian analysis
+              </Typography>
+              <Box component="ol" sx={{ pl: 2, mt: 1 }}>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Bayesian nonparametrics
+                </Typography>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Online learning
+                </Typography>
+              </Box>
+            </Box>
+
+            <Box component="li">
+              <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                Statistical causal inference
+              </Typography>
+              <Box component="ol" sx={{ pl: 2, mt: 1 }}>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Principal stratification
+                </Typography>
+                <Typography component="li" variant="body2" color="text.secondary">
+                  Semiparametric inference
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+        </Paper>
+      </Container>
     </Box>
   )
 }
