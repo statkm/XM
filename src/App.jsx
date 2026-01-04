@@ -51,7 +51,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <BrowserRouter basename="/XM">
         <Box sx={{ display: 'flex', minHeight: '100vh' }}>
           <Drawer />
           <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
