@@ -1,5 +1,6 @@
 import Brightness4Icon from '@mui/icons-material/Brightness4'
 import Brightness7Icon from '@mui/icons-material/Brightness7'
+import MenuIcon from '@mui/icons-material/Menu'
 import AppBar from '@mui/material/AppBar'
 import Container from '@mui/material/Container'
 import IconButton from '@mui/material/IconButton'
@@ -8,7 +9,7 @@ import Typography from '@mui/material/Typography'
 import { useTheme } from '@mui/material/styles'
 import { useLocation } from 'react-router-dom'
 
-function Header({ mode, toggleColorMode }) {
+function Header({ mode, toggleColorMode, toggleDrawer }) {
   const theme = useTheme()
   const location = useLocation()
 
@@ -30,6 +31,14 @@ function Header({ mode, toggleColorMode }) {
     >
       <Container maxWidth="lg">
         <Toolbar disableGutters>
+          <IconButton
+            color="inherit"
+            onClick={toggleDrawer}
+            edge="start"
+            sx={{ mr: 2 }}
+          >
+            <MenuIcon />
+          </IconButton>
           <Typography
             variant="h5"
             component="div"

@@ -18,7 +18,7 @@ const menuItems = [
   { text: 'Papers', icon: <DescriptionIcon />, path: '/papers' },
 ]
 
-function Drawer() {
+function Drawer({ open }) {
   const location = useLocation()
 
   const drawerContent = (
@@ -70,7 +70,8 @@ function Drawer() {
 
   return (
     <MuiDrawer
-      variant="permanent"
+      variant="persistent"
+      open={open}
       sx={{
         width: drawerWidth,
         flexShrink: 0,

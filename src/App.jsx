@@ -14,9 +14,14 @@ function App() {
     const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
     return prefersDarkMode ? 'dark' : 'light'
   })
+  const [drawerOpen, setDrawerOpen] = useState(true)
 
   const toggleColorMode = () => {
     setMode((prevMode) => (prevMode === 'light' ? 'dark' : 'light'))
+  }
+
+  const toggleDrawer = () => {
+    setDrawerOpen((prev) => !prev)
   }
 
   const theme = useMemo(
@@ -53,9 +58,9 @@ function App() {
       <CssBaseline />
       <BrowserRouter basename="/XM">
         <Box sx={{ display: 'flex', minHeight: '100vh' }}>
-          <Drawer />
+          <Drawer open={drawerOpen} />
           <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-            <Header mode={mode} toggleColorMode={toggleColorMode} />
+            <Header mode={mode} toggleColorMode={toggleColorMode} toggleDrawer={toggleDrawer} />
             <Routes>
               <Route path="/" element={<Navigate to="/home/" replace />} />
               <Route path="/home" element={<MainContent />} />
