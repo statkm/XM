@@ -1,4 +1,5 @@
 import Box from '@mui/material/Box'
+import Chip from '@mui/material/Chip'
 import Container from '@mui/material/Container'
 import Link from '@mui/material/Link'
 import Paper from '@mui/material/Paper'
@@ -31,6 +32,15 @@ function Papers() {
                   [link]
                 </Link>
               </Typography>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 1 }}>
+                <Chip label="en" size="small" color="primary" sx={{ mb: 1 }} />
+                <Chip label="estimand" size="small" variant="outlined" />
+                <Chip label="monotonicity" size="small" variant="outlined" />
+                <Chip label="non-normal" size="small" variant="outlined" />
+                <Chip label="principal ignorability" size="small" variant="outlined" />
+                <Chip label="principal stratification" size="small" variant="outlined" />
+                <Chip label="principal stratum" size="small" variant="outlined" />
+              </Box>
             </Box>
 
             <Box component="li" sx={{ mb: 2 }}>
@@ -41,6 +51,14 @@ function Papers() {
                   [link]
                 </Link>
               </Typography>
+              <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5, mt: 1 }}>
+                <Chip label="ja" size="small" color="primary" sx={{ mb: 1 }} />
+                <Chip label="生存時間解析" size="small" variant="outlined" />
+                <Chip label="ログランク統計量" size="small" variant="outlined" />
+                <Chip label="計算代数統計" size="small" variant="outlined" />
+                <Chip label="正確検定" size="small" variant="outlined" />
+                <Chip label="有意水準" size="small" variant="outlined" />
+              </Box>
             </Box>
           </Box>
         </Paper>
@@ -67,6 +85,11 @@ function Papers() {
               <Typography variant="body2">
                 <strong>WO2024143374</strong> - BUSINESS SUPPORT SYSTEM, BUSINESS SUPPORT METHOD, DATA MANAGEMENT PROGRAM, AND SEARCH PROGRAM.{' '}
                 <Link href="https://patentscope2.wipo.int/search/en/detail.jsf?docId=WO2024143374" target="_blank" rel="noopener">
+                  [link]
+                </Link>
+                <br />
+                <strong>特開2025-168523</strong>.{' '}
+                <Link href="https://www.j-platpat.inpit.go.jp/c1801/PU/JP-2025-168523/11/ja" target="_blank" rel="noopener">
                   [link]
                 </Link>
               </Typography>
