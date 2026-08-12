@@ -78,37 +78,6 @@ function MainContent() {
             </Box>
           </Box>
 
-          <Divider sx={{ my: 3 }} />
-
-          <Box>
-            <Typography variant="subtitle1" sx={{ fontWeight: 600, mb: 1 }}>
-              The University of Osaka
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Ph.D. Candidate @  
-              <Link href="http://www.sigmath.es.osaka-u.ac.jp/Stat1/" target="_blank" rel="noopener">
-                Uchida Laboratory
-              </Link>
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Area of Mathematical and Statistical Finance
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Division of Mathematical Science for Social Systems
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Graduate School of Engineering Science
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              The University of Osaka
-            </Typography>
-            <Box sx={{ display: 'flex', alignItems: 'flex-start', gap: 1, mt: 1 }}>
-              <LocationOnIcon fontSize="small" color="action" />
-              <Typography variant="body2" color="text.secondary">
-                1-3 Machikaneyama-cho Toyonaka, Osaka, Japan 560-8531
-              </Typography>
-            </Box>
-          </Box>
         </Paper>
 
         {/* Research Theme Section */}
