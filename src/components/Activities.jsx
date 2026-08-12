@@ -24,6 +24,16 @@ function Activities() {
           <Box component="ol" sx={{ pl: 2 }}>
             <Box component="li" sx={{ mb: 2 }}>
               <Typography variant="body2">
+                <strong>Shingo Kuroda, Sho Sakui, Kotaro Mizuma, Shunichiro Orihara, Takamasa Hashimoto</strong> (2026.8).
+                Sensitivity Analysis for Principal Ignorability Assumption in Quantile Treatment Effect Estimation.{' '}
+                <Link href="https://ww2.amstat.org/meetings/jsm/2026/" target="_blank" rel="noopener">
+                  JSM2026
+                </Link>.
+              </Typography>
+            </Box>
+
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
                 <strong>Kotaro Mizuma, Takamasa Hashimoto, Sho Sakui, Shingo Kuroda</strong> (2025.8).
                 Estimation method of principal quantile treatment effect using principal scores and its application.{' '}
                 <Link href="https://ww2.amstat.org/meetings/jsm/2025/index.cfm" target="_blank" rel="noopener">
@@ -61,6 +71,26 @@ function Activities() {
           </Typography>
 
           <Box component="ol" sx={{ pl: 2 }}>
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
+                <strong>作井 将, 水間 浩太郎, 黒田 晋吾, 折原 隼一郎, 橋本 隆正</strong> (2026.9).
+                Principal Scores Estimation Using Covariate Balancing Propensity Scores Approach.{' '}
+                <Link href="https://www.jfssa.jp/" target="_blank" rel="noopener">
+                  2026年度統計関連学会連合大会
+                </Link>.
+              </Typography>
+            </Box>
+
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
+                <strong>水間 浩太郎, 黒田 晋吾, 作井 将, 折原 隼一郎, 橋本 隆正</strong> (2026.6).
+                A Dichotomized Copula Approach for Multi-Arm Principal Stratification Without Monotonicity Assumption.{' '}
+                <Link href="https://www.jscs.jp/" target="_blank" rel="noopener">
+                  日本計算機統計学会第40回大会/The 40th Annual Meeting of Japanese Society of Computational Statistics
+                </Link>.
+              </Typography>
+            </Box>
+
             <Box component="li" sx={{ mb: 2 }}>
               <Typography variant="body2">
                 <strong>黒田 晋吾、橋本 隆正、作井 将、水間 浩太郎</strong> (2025.5).
@@ -142,6 +172,26 @@ function Activities() {
           </Typography>
 
           <Box component="ol" sx={{ pl: 2 }}>
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
+                <strong>高浪 洋平, 仲家 諒, 佐々木 英麿, 水間 浩太郎</strong> (2026.8).
+                臨床試験におけるAIによる統計解析・プログラミング関連業務効率化の取り組み.{' '}
+                <Link href="https://www.pharma-datascience.com/" target="_blank" rel="noopener">
+                  製薬×データサイエンスMeetup2026
+                </Link>.
+              </Typography>
+            </Box>
+
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
+                <strong>水間浩太郎</strong> (2026.6).
+                A Dichotomized Copula Approach for Multi-Arm Principal Stratification Without Monotonicity Assumption.{' '}
+                <Link href="https://www.jscs.jp/" target="_blank" rel="noopener">
+                  第10回 かごしまデータ科学記念シンポジウム
+                </Link>.
+              </Typography>
+            </Box>
+
             <Box component="li" sx={{ mb: 2 }}>
               <Typography variant="body2">
                 <strong>水間浩太郎</strong> (2025.11).

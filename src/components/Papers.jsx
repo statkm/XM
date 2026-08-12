@@ -69,9 +69,14 @@ function Papers() {
             Working Papers
           </Typography>
 
-          <Typography variant="body2" color="text.secondary">
-            ■
-          </Typography>
+          <Box component="ol" sx={{ pl: 2 }}>
+            <Box component="li" sx={{ mb: 2 }}>
+              <Typography variant="body2">
+                <strong>Shingo Kuroda, Sho Sakui, Kotaro Mizuma, Shunichiro Orihara, Takamasa Hashimoto.</strong>{' '}
+                Sensitivity analysis for the principal ignorability assumption in principal quantile treatment effect estimation.
+              </Typography>
+            </Box>
+          </Box>
         </Paper>
 
         {/* Patent Section */}

@@ -48,6 +48,10 @@ yarn-error.log*
 node_modules/
 .pnp
 .pnp.js
+.npm/
+.vite/
+.node-repl_history
+.yarn/
 
 # Build outputs
 dist/
@@ -63,3 +67,7 @@ build/
 # Temporary files
 *.tmp
 *.temp
+*.tar
+*.tar.gz
+*.tgz
+*.tar.xz

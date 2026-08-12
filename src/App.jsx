@@ -8,6 +8,7 @@ import Drawer from './components/Drawer'
 import Header from './components/Header'
 import MainContent from './components/MainContent'
 import Papers from './components/Papers'
+import Footer from './components/Footer'
 
 function App() {
   const [mode, setMode] = useState(() => {
@@ -57,9 +58,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter basename="/XM">
-        <Box sx={{ display: 'flex', minHeight: '100vh' }}>
+        <Box sx={{ display: 'flex', minHeight: '100vh', width: '100%' }}>
           <Drawer open={drawerOpen} />
-          <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+          <Box sx={{ display: 'flex', flexDirection: 'column', flexGrow: 1, minWidth: 0 }}>
             <Header mode={mode} toggleColorMode={toggleColorMode} toggleDrawer={toggleDrawer} />
             <Routes>
               <Route path="/" element={<Navigate to="/home/" replace />} />
@@ -69,6 +70,7 @@ function App() {
               <Route path="/biography" element={<Box sx={{ p: 4 }}>Biography Page</Box>} />
               <Route path="/papers" element={<Papers />} />
             </Routes>
+            <Footer />
           </Box>
         </Box>
       </BrowserRouter>

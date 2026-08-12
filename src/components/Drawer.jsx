@@ -21,6 +21,10 @@ const menuItems = [
 function Drawer({ open }) {
   const location = useLocation()
 
+  if (!open) {
+    return null
+  }
+
   const drawerContent = (
     <Box sx={{ overflow: 'auto', height: '100%', display: 'flex', flexDirection: 'column' }}>
       <Box
