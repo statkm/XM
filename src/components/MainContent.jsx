@@ -45,9 +45,11 @@ function MainContent() {
             <Typography variant="body2" sx={{ ml: 4, display: 'flex', alignItems: 'center', gap: 1 }}>
               kotaro.mizuma19 [at] gmail.com (private<FaceIcon fontSize="small" color="action" />)
             </Typography>
+            {/*
             <Typography variant="body2" sx={{ ml: 4, display: 'flex', alignItems: 'center', gap: 1 }}>
               mizuma [at] sigmath.es.osaka-u.ac.jp (academic<SchoolIcon fontSize="small" color="action" />)
             </Typography>
+            */}
             <Typography variant="caption" color="text.secondary" sx={{ ml: 4, mt: 1, display: 'block', fontStyle: 'italic' }}>
               Note: [at] should be replaced with @ to avoid spam bots.
             </Typography>
